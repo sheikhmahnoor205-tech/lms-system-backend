@@ -16,7 +16,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-mongoose.connect("mongodb+srv://sheikhmahnoor205_db_user:<Mahnoor5500>@lms-cluster.cdcts9h.mongodb.net/?appName=LMS-Cluster")
+mongoose.connect("mongodb+srv://sheikhmahnoor205_db_user:<Mahnoor0307>@lms-cluster.cdcts9h.mongodb.net/?appName=LMS-Cluster")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB error:", err));
 
