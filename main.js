@@ -11,12 +11,12 @@ import leaveRoute from './routes/leave.js'
 import settingRoute from './routes/setting.js'
 import adminRoute from './routes/admin.js'
 import notificationRoute from './routes/notification.js'
-
+import dotenv from 'dotenv/config';
 const app = express()
 
 app.use(cors())
 app.use(express.json())
-mongoose.connect("mongodb+srv://sheikhmahnoor205_db_user:Mahnoor030701@lms-cluster.cdcts9h.mongodb.net/?appName=LMS-Cluster")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB error:", err));
 
